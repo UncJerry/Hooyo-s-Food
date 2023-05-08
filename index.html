@@ -27,42 +27,62 @@
 <body>
 
     <!-- ===== Navigation Bar ===== -->
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="images/Logo.png" alt="Hooyo's Food">
-            </a>
+    <!-- This is the start of the header section -->
+<header>
+    <!-- This is the navigation bar section with class "navbar" -->
+    <nav class="navbar">
+        <!-- This is the logo section with a hyperlink to the homepage -->
+        <a href="index.html" class="logo">
+            <img src="images/Logo.png" alt="Hooyo's Food">
+        </a>
 
-            <div class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="/" class="active">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about-us.html">About us</a></li>
-                </ul>
-            </div>
+        <!-- This is the navigation menu section -->
+        <div class="nav-menu">
+            <!-- This is the unordered list containing navigation links -->
+            <ul class="nav-list">
+                <!-- This is the home link with class "active" -->
+                <li><a href="/" class="active">Home</a></li>
+                <!-- This is the gallery link -->
+                <li><a href="gallery.html">Gallery</a></li>
+                <!-- This is the about us link -->
+                <li><a href="about-us.html">About us</a></li>
+            </ul>
+        </div>
 
-            <i class="fa-solid fa-bars" id="bar"></i>
-        </nav>
-    </header>
+        <!-- This is the icon for the mobile menu, with id "bar" -->
+        <i class="fa-solid fa-bars" id="bar"></i>
+    </nav>
+</header>
 
     <!-- ===== Mobile Menu ===== -->
-    <div class="popup-mobilemenu">
-        <div class="menu-inner">
-            <div class="menu-top">
-                <i class="fa-solid fa-close" id="close"></i>
-            </div>
+    <!-- Creates a popup mobile menu with class "popup-mobilemenu" -->
+<div class="popup-mobilemenu">
+    <!-- Contains the inner content of the menu with class "menu-inner" -->
+    <div class="menu-inner">
+        <!-- Contains the top section of the menu with class "menu-top" -->
+        <div class="menu-top">
+            <!-- Creates a close button with class "fa-close" and ID "close" -->
+            <i class="fa-solid fa-close" id="close"></i>
+        </div>
 
-            <div class="content">
-                <nav id="sideNavMobile" class="mainmenu-nav">
-                    <ul class="navbar-list1">
-                        <li><a class="menu__item active" href="index.html">Home</a></li>
-                        <li><a class="menu__item" href="gallery.html">Gallery</a></li>
-                        <li><a class="menu__item" href="about-us.html">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <!-- Contains the main content of the menu with class "content" -->
+        <div class="content">
+            <!-- Creates a navigation bar with ID "sideNavMobile" and class "mainmenu-nav" -->
+            <nav id="sideNavMobile" class="mainmenu-nav">
+                <!-- Creates an unordered list with class "navbar-list1" -->
+                <ul class="navbar-list1">
+                    <!-- Creates a list item with an active class and a link to index.html -->
+                    <li><a class="menu__item active" href="index.html">Home</a></li>
+                    <!-- Creates a list item with a link to gallery.html -->
+                    <li><a class="menu__item" href="gallery.html">Gallery</a></li>
+                    <!-- Creates a list item with a link to about-us.html -->
+                    <li><a class="menu__item" href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
+</div>
+
 
 
     <!-- ==========================================================================================
@@ -70,97 +90,131 @@
     ========================================================================================== -->
     
 
-    <div class="slider" id="hero-section">
-        <div class="slide_viewer">
-            <div class="slide_group">
-                <div class="slide">
-                    <div class="center">
-                        <div class="content">
-                            <div class="hero-text">
-                                <h1>Welcome to Hooyo's Food</h1>
-                                <h2>A Place where You can get Somali Foods</h2>
-                                <a href="about-us.html" class="btn">About Us</a>
-                            </div>
+    <!-- Define a slider with three slides. -->
+<div class="slider" id="hero-section">
+    <!-- The slide viewer contains the slides and allows users to switch between them. -->
+    <div class="slide_viewer">
+        <!-- The slide group contains all the slides and allows them to be positioned together. -->
+        <div class="slide_group">
+            <!-- Define the first slide. -->
+            <div class="slide">
+                <!-- Center the content of the slide. -->
+                <div class="center">
+                    <!-- Define the content of the slide. -->
+                    <div class="content">
+                        <!-- The hero text is the main message of the slide. -->
+                        <div class="hero-text">
+                            <!-- The h1 element contains the main header of the slide. -->
+                            <h1>Welcome to Hooyo's Food</h1>
+                            <!-- The h2 element contains a secondary header or subtitle. -->
+                            <h2>A Place where You can get Somali Foods</h2>
+                            <!-- The btn class defines a button that links to the about us page. -->
+                            <a href="about-us.html" class="btn">About Us</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="slide">
-                    <div class="center">
-                        <div class="content">
-                            <div class="hero-text">
-                                <h1>Made with Fresh Ingredients</h1>
-                            </div>
+            <!-- Define the second slide. -->
+            <div class="slide">
+                <div class="center">
+                    <div class="content">
+                        <div class="hero-text">
+                            <h1>Made with Fresh Ingredients</h1>
                         </div>
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="center">
-                        <div class="content">
-                            <div class="hero-text">
-                                <h1>Get Your Food Now!</h1>
-                                <a href="#/" class="btn">Contact Now</a>
-                            </div>
+            </div>
+
+            <!-- Define the third slide. -->
+            <div class="slide">
+                <div class="center">
+                    <div class="content">
+                        <div class="hero-text">
+                            <h1>Get Your Food Now!</h1>
+                            <!-- This button links to a contact form. -->
+                            <a href="#/" class="btn">Contact Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="directional_nav">
-        <div class="previous_btn" title="Previous">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-                <g>
-                    <g>
-                        <path fill="#e1e1e1"
-                            d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
-                  c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z" />
-                        <path fill="#e1e1e1"
-                            d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z" />
-                    </g>
-                </g>
-            </svg>
-        </div>
-        <div class="next_btn" title="Next">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-                <g>
-                    <g>
-                        <path fill="#e1e1e1"
-                            d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z" />
-                        <path fill="#e1e1e1"
-                            d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z" />
-                    </g>
-                </g>
-            </svg>
-        </div>
-    </div>
+</div>
+<!-- Start of HTML element that contains an SVG image -->
+<div class="directional_nav">
+    <!-- Start of SVG image -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+        <!-- Start of group element -->
+        <g>
+            <!-- Start of group element -->
+            <g>
+                <!-- Start of first path -->
+                <!-- Represents a circle with a radial gradient fill, forming a circular border -->
+                <path fill="#e1e1e1" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
+                c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z" />
+                <!-- End of first path -->
+                <!-- Start of second path -->
+                <!-- Represents an arrow pointing left -->
+                <path fill="#e1e1e1" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z" />
+                <!-- End of second path -->
+            </g>
+            <!-- End of group element -->
+        </g>
+        <!-- End of group element -->
+    </svg>
+    <!-- End of SVG image -->
+</div>
+<!-- End of HTML element that contains an SVG image -->
+
+    <!-- A div element with class "next_btn" that represents a button -->
+<div class="next_btn" title="Next">
+    <!-- An SVG element with attributes for version, xmlns, and dimensions -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+        y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+        <!-- A group element that contains two path elements -->
+        <g>
+            <g>
+                <!-- A path element with fill color "e1e1e1" that represents a circle with an arrow inside -->
+                <path fill="#e1e1e1"
+                    d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z" />
+                <!-- A path element with fill color "e1e1e1" that represents an arrow -->
+                <path fill="#e1e1e1"
+                    d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z" />
+            </g>
+        </g>
+    </svg>
+</div>
+
 
     <!-- ==========================================================================================
             ABOUT SECTION
     ========================================================================================== -->
-    <section class="section home-about">
-        <div class="container">
-
-            <div class="flex">
-                <div class="flex-content">
-                    <span>Hooyo's Food</span>
-                    <h2>Who We Are</h2>
-                    <p>Hooyo's Food is a Somali food website that operates online and provides an extensive range of traditional Somali dishes. Customers can place orders for authentic Somali cuisine that includes popular dishes such as sambusas and suqaar, and the food can be delivered straight to their doorstep. Hooyo's Food puts a strong emphasis on using fresh ingredients and traditional cooking techniques to ensure the rich flavors of Somali cuisine are fully enjoyed. If you're interested in exploring the diverse tastes of Somali cuisine, Hooyo's Food is a great option to try out.
-
-
-
-
-                    </p>
-                    <a href="about-us.html" class="btn">Learn More</a>
-                </div>
-                <div class="flex-img">
-                    <img src="images/Malawah.jpg" alt="About Us">
-                </div>
+    <!-- This is a section that displays information about "Hooyo's Food", a Somali food website. -->
+<section class="section home-about">
+    <div class="container">
+        <!-- This is a flexible container that displays the content of the section in two columns. -->
+        <div class="flex">
+            <!-- This is the first column which contains the content. -->
+            <div class="flex-content">
+                <!-- This is the name of the food website. -->
+                <span>Hooyo's Food</span>
+                <!-- This is a heading that introduces what follows. -->
+                <h2>Who We Are</h2>
+                <!-- This is a paragraph that describes what the food website is and what it offers. -->
+                <p>Hooyo's Food is a Somali food website that operates online and provides an extensive range of traditional Somali dishes. Customers can place orders for authentic Somali cuisine that includes popular dishes such as sambusas and suqaar, and the food can be delivered straight to their doorstep. Hooyo's Food puts a strong emphasis on using fresh ingredients and traditional cooking techniques to ensure the rich flavors of Somali cuisine are fully enjoyed. If you're interested in exploring the diverse tastes of Somali cuisine, Hooyo's Food is a great option to try out.</p>
+                <!-- This is a button that links to the "About Us" page. -->
+                <a href="about-us.html" class="btn">Learn More</a>
+            </div>
+            <!-- This is the second column which contains an image. -->
+            <div class="flex-img">
+                <!-- This is an image of Malawah, a traditional Somali dish. -->
+                <img src="images/Malawah.jpg" alt="About Us">
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 
     <!-- ==========================================================================================
@@ -171,7 +225,7 @@
             <h1>Connect With Us</h1>
             <p>Send us Email at:</p>
             <a class="mail" href="mailto:drippedcakes@gmail.com"><i class="fas fa-envelope"></i>
-                drippedcakes@gmail.com</a>
+                hooyosfood@gmail.com</a>
 
             <ul class="social_icons">
                 <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li>
