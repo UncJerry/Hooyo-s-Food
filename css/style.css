@@ -161,7 +161,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.3);
+  box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.327);
   transition: all 0.15s ease-in-out 0s;
   /* padding: 7px 30px; */
   background-color: #fff;
