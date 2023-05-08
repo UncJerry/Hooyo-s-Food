@@ -11,7 +11,7 @@ mobileMenu.addEventListener('click', (e) => {
         // close the side-bar menu
         closeSideMenu();
 
-        // change the location
+        // changes the location 
         window.location.href = e.target.href;
     }
 });
