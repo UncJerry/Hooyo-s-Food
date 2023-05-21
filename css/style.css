@@ -441,7 +441,7 @@ This code defines the styles for a navbar that appears when scrolling.
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url("../images/Surbiyaan\ Hilib\ adhi.jpg");
+    url("../images/SurbiyaanHilibadhi.jpg");
 }
 
 .slide:nth-of-type(3) {
@@ -450,7 +450,7 @@ This code defines the styles for a navbar that appears when scrolling.
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url("../images/Kaluun\ Iyo\ Bariis.jpg");
+    url("../images/KaluunIyoBariis.jpg");
 }
 
 .slide:nth-of-type(4) {
@@ -617,7 +617,7 @@ a.slide_btn {
 .page-header {
   height: 100vh;
   /* padding-top: 115px; */
-  background: url("../images/Kaluun\ Iyo\ Bariis.jpg");
+  background: url("../images/KaluunIyoBariis.jpg");
   background-color: rgb(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-size: cover;
@@ -863,6 +863,9 @@ a.slide_btn {
 .connect {
   margin-bottom: 50px;
 }
+.connect .container h2 {
+font-size: 50px;
+}
 .connect .container{
   display: flex;
   flex-direction: column;
@@ -919,7 +922,7 @@ a.slide_btn {
    GALLERY
    ====================================== */
 .page-header.gallery {
-  background-image: url("../images/Suugo\ Suqaar.jpg");
+  background-image: url("../images/SuugoSuqaar.jpg");
 }
 
 
