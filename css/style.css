@@ -1,11 +1,14 @@
+/* Importing font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800&display=swap");
 
+/* CSS variables for fonts and colors */
 :root {
   --nunito: "Nunito", sans-serif;
   --nunito-sans: "Nunito Sans", sans-serif;
   --brown-clr: #96502b;
 }
 
+/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,26 +17,30 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: var(--nunito);
+  font-family: var(--nunito); /* Set the default font for the entire HTML document */
 }
 
+/* Set the body element to hide horizontal overflow and center its content */
 body {
-  overflow-x: hidden;
-  width: 100%;
-  margin: 0 auto;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  width: 100%; /* Set the width to 100% */
+  margin: 0 auto; /* Center the content using auto margins */
 }
 
+/* Remove text decoration for links and their hover and focus states */
 a,
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: none; /* Remove underline and other decorations */
 }
 
+/* Remove default list styles for unordered lists and list items */
 ul,
 li {
-  list-style: none;
+  list-style: none; /* Remove bullet points from lists */
 }
 
+/* Set margin to 0 for various heading elements */
 h1,
 h2,
 h2 span,
@@ -41,63 +48,72 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 0; /* Remove margins to have consistent spacing */
 }
 
+/* Typography styles */
+
+/* Style for heading level 1 */
 h1 {
-  font-weight: 500;
-  font-size: 56px;
-  margin: 0 0 20px 0;
+  font-weight: 500; /* Set the font weight to 500 */
+  font-size: 56px; /* Set the font size to 56 pixels */
+  margin: 0 0 20px 0; /* Set the margin bottom to 20 pixels */
 }
+
 
 a,
 ul,
 li,
 p {
-  font-family: var(--nunito);
-  color: #202020;
+  font-family: var(--nunito); /* Use the Nunito font for anchor tags, lists, and paragraphs */
+  color: #202020; /* Set the text color to dark gray */
 }
 
 p {
-  line-height: 1.6em;
-  font-size: 18px;
+  line-height: 1.6em;  /* Sets the space between lines of text in paragraphs */
+  font-size: 18px;    /* Sets the font size for paragraphs */
 }
 
+/* Container styles */
 .container {
-  width: 95%;
-  margin: auto;
-  padding: 20px 30px;
+  width: 95%;         /* Sets the width of the container to 95% of its parent element */
+  margin: auto;       /* Centers the container horizontally */
+  padding: 20px 30px; /* Sets the padding inside the container */
 }
 
+/* Section styles */
 .section {
-  padding: 3em 0 5em;
-  background: #fff;
-  position: relative;
-  z-index: 1;
+  padding: 3em 0 5em; /* Sets the top, right, and bottom padding of the section */
+  background: #fff;   /* Sets the background color of the section to white */
+  position: relative; /* Sets the positioning context for the section */
+  z-index: 1;         /* Sets the stacking order of the section */
 }
 
-/* ===== Header - Navbar ====== */
+/* Header - Navbar styles */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 3rem;
-  background: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  display: flex;                          /* Displays the navbar as a flex container */
+  align-items: center;                    /* Aligns the items vertically in the center */
+  justify-content: space-between;         /* Distributes the items evenly along the navbar */
+  padding: 0.5rem 3rem;                   /* Sets the padding inside the navbar */
+  background: none;                       /* Sets the background of the navbar to none */
+  position: absolute;                     /* Sets the positioning context for the navbar */
+  top: 0;                                 /* Positions the navbar at the top of its container */
+  left: 0;                                /* Positions the navbar at the left of its container */
+  width: 100%;                            /* Sets the width of the navbar to 100% of its container */
+  z-index: 1000;                          /* Sets the stacking order of the navbar */
 }
 
 .logo {
-  width: 10%;
+  width: 10%;                             /* Sets the width of the logo element to 10% of its parent container */
 }
 
 .logo img {
-  width: 100%;
-  filter: brightness(0) invert(1);
+  width: 100%;                            /* Sets the width of the logo image to 100% of its parent container */
+  filter: brightness(0) invert(1);        /* Applies a visual effect to the logo image (brightness and invert) */
 }
+
+
+/* Styles for the navigation menu in the navbar */
 
 .navbar .nav-menu {
   display: flex;
@@ -105,8 +121,10 @@ p {
   justify-content: center;
   gap: 20px;
   position: relative;
-  z-index: -1;
+  z-index: -1; /* Negative z-index means the menu will be placed behind other elements */
 }
+
+/* Styles for the unordered list within the navbar */
 
 .navbar ul {
   display: flex;
@@ -115,24 +133,30 @@ p {
   list-style: none;
 }
 
+/* Styles for each list item within the unordered list */
+
 .navbar ul li {
   padding: 0.5rem;
-  transition: 0.3s;
+  transition: 0.3s; /* Smooth transition effect */
   margin: 0 20px 0 0;
 }
 
+/* Styles for anchor tags within list items */
+
 .navbar ul li a {
-  color: #fff;
-  font-weight: 600;
+  color: #fff; /* White text color */
+  font-weight: 600; /* Bold font weight */
   font-size: 16px;
-  font-family: var(--montserrat);
+  font-family: var(--montserrat); /* Custom font family */
   line-height: 27px;
   padding-bottom: 10px;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Uppercase text */
   text-align: center;
   position: relative;
-  transition: 0.5s;
+  transition: 0.5s; /* Smooth transition effect */
 }
+
+/* Styles for the pseudo-element "::after" of anchor tags */
 
 .navbar ul li a::after,
 .popup-mobilemenu .content .mainmenu-nav .navbar-list1 li a::after {
@@ -141,28 +165,33 @@ p {
   width: 0%;
   height: 2px;
   left: 0;
-  transition: 0.5s;
-  background-color: #e5bb31;
+  transition: 0.5s; /* Smooth transition effect */
+  background-color: #e5bb31; /* Yellow background color */
   bottom: 3px;
 }
+
+/* Styles when hovering or when the anchor tag is active */
 
 .navbar ul li a:hover::after,
 .navbar ul li a.active::after,
 .popup-mobilemenu .content .mainmenu-nav .navbar-list1 li a.active::after {
-  width: 60%;
+  width: 60%; /* Increase the width to create a progress bar effect */
 }
+
+/* Styles for active anchor tags */
 
 .navbar ul li a.active {
-  color: #fff;
+  color: #fff; /* White text color */
 }
 
-.navbar.scroll-on{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.327);
-  transition: all 0.15s ease-in-out 0s;
+
+.navbar.scroll-on {
+  position: fixed; /* Fix the position of the navbar */
+  top: 0; /* Place the navbar at the top of the page */
+  left: 0; /* Place the navbar at the left side of the page */
+  width: 100%; /* Set the width of the navbar to 100% */
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.3); /* Add a box shadow effect to the navbar */
+  transition: all 0.15s ease-in-out 0s; /* Apply a smooth transition effect to all properties with a duration of 0.15 seconds */
   /* padding: 7px 30px; */
   background-color: #fff;
   backdrop-filter: blur(10px);
@@ -196,23 +225,30 @@ p {
 }
 
 
+/* 
+This code defines the styles for a navbar that appears when scrolling.
+*/
+
 .navbar.scroll-on {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.3);
-  transition: all 0.15s ease-in-out 0s;
-  background: #fff;
-  z-index: 1000;
-  animation: headerSlideDown 0.5s ease forwards;
+  position: fixed; /* The navbar will be fixed in the viewport */
+  top: 0; /* Positioned at the top of the viewport */
+  left: 0; /* Positioned at the left edge of the viewport */
+  width: 100%; /* Takes up the entire width of the viewport */
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.3); /* Adds a box shadow effect */
+  transition: all 0.15s ease-in-out 0s; /* Adds a smooth transition effect */
+  background: #fff; /* Sets the background color to white */
+  z-index: 1000; /* Sets the stacking order of the navbar */
+  animation: headerSlideDown 0.5s ease forwards; /* Applies an animation to slide the navbar down */
 }
+
 .navbar.scroll-on .logo {
-  width: 7%;
+  width: 7%; /* Sets the width of the logo to 7% of the parent container */
 }
+
 .navbar.scroll-on .logo img {
-  filter: none;
+  filter: none; /* Removes any image filters applied to the logo */
 }
+
 
 @keyframes headerSlideDown {
   0% {
@@ -260,37 +296,41 @@ p {
   opacity: 1;
 }
 
+/* Styling for the mobile menu popup */
 .popup-mobilemenu .menu-inner {
-  padding: 25px 40px;
-  width: 375px;
-  z-index: 999;
-  position: absolute;
-  background: #f5f5f5;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 10px 0 rgb(0 0 0 / 70%);
-  opacity: 0;
-  right: -350px;
-  transition: all 0.5s ease-out;
+  padding: 25px 40px; /* Adds padding of 25px on top and bottom, 40px on left and right */
+  width: 375px; /* Sets the width of the menu to 375px */
+  z-index: 999; /* Sets the stacking order of the menu */
+  position: absolute; /* Positions the menu absolutely */
+  background: #f5f5f5; /* Sets the background color of the menu */
+  height: 100%; /* Sets the height of the menu to 100% of its container */
+  display: flex; /* Displays the menu as a flex container */
+  flex-direction: column; /* Sets the flex direction to column */
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 70%); /* Adds a box shadow to the menu */
+  opacity: 0; /* Sets the initial opacity of the menu to 0 (invisible) */
+  right: -350px; /* Initially positions the menu 350px to the right of its container */
+  transition: all 0.5s ease-out; /* Adds a transition effect to all properties with a duration of 0.5s */
 }
 
+/* Styling for the open mobile menu */
 .popup-mobilemenu.menu-open .menu-inner {
-  opacity: 1;
-  right: 0;
-  overflow-y: auto;
+  opacity: 1; /* Sets the opacity of the menu to 1 (visible) when the menu is open */
+  right: 0; /* Positions the menu at the right edge of its container when the menu is open */
+  overflow-y: auto; /* Adds vertical scroll if the content exceeds the height of the menu */
 }
 
+/* Styling for the top section of the menu */
 .popup-mobilemenu .menu-inner .menu-top {
-  border-bottom: 1px solid rgba(255, 224, 21, 0.3);
-  padding: 0 0 10px 0;
-  display: flex;
-  justify-content: flex-end;
+  border-bottom: 1px solid rgba(255, 224, 21, 0.3); /* Adds a bottom border with a specific color and transparency */
+  padding: 0 0 10px 0; /* Adds padding at the bottom of the top section */
+  display: flex; /* Displays the top section as a flex container */
+  justify-content: flex-end; /* Aligns the content to the right of the top section */
 }
 
+/* Styling for the icons within the top section */
 .menu-top i {
-  color: #1b1b1b;
-  font-size: 22px;
+  color: #1b1b1b; /* Sets the color of the icons */
+  font-size: 22px; /* Sets the font size of the icons */
 }
 
 .popup-mobilemenu .content {
@@ -345,39 +385,46 @@ p {
 
 
 /* SLIDER */
+/* CSS code for a slider component */
+
+/* Styles for the container of the slider */
 .slider {
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 auto; /* Centers the slider horizontally */
+  width: 100%; /* Takes up the full width of its parent container */
 }
 
+/* Styles for the container that displays the slides */
 .slide_viewer {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  border-bottom-right-radius: 300px;
+  height: 100vh; /* Sets the height of the slide viewer to the full viewport height */
+  overflow: hidden; /* Hides any content that overflows the slide viewer */
+  position: relative; /* Allows positioning of child elements */
+  border-bottom-right-radius: 300px; /* Applies a rounded border to the bottom right corner of the slide viewer */
 }
 
+/* Styles for the group of slides */
 .slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%;
+  height: 100%; /* Takes up the full height of the slide viewer */
+  position: relative; /* Allows positioning of child elements */
+  width: 100%; /* Takes up the full width of the slide viewer */
 }
 
+/* Styles for individual slides */
 .slide {
-  display: none;
-  height: 100%;
-  padding-top: 135px;
-  position: absolute;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  display: none; /* Hides the slides by default */
+  height: 100%; /* Takes up the full height of the slide viewer */
+  padding-top: 135px; /* Adds spacing at the top of each slide */
+  position: absolute; /* Allows positioning of the slides within the slide group */
+  width: 100%; /* Takes up the full width of the slide viewer */
+  background-repeat: no-repeat; /* Prevents background images from repeating */
+  background-size: cover; /* Scales the background image to cover the entire slide */
+  background-position: center center; /* Centers the background image */
 }
 
+/* Display the first slide */
 .slide:first-child {
   display: block;
 }
+
 
 .slide:nth-of-type(1) {
   background-image: linear-gradient(
@@ -508,56 +555,62 @@ a.slide_btn {
   justify-content: center;
 }
 
+/* Styles for the content section */
 .content {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  gap: 0;
+  position: relative; /* Position the content section */
+  max-width: 100%; /* Set the maximum width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+  display: flex; /* Display the content as a flex container */
+  flex-direction: column; /* Arrange the content vertically */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  text-align: left; /* Align the text to the left */
+  gap: 0; /* Set the gap between child elements to 0 */
 }
 
+/* Styles for the hero text */
 .hero-text {
-  width: 850px;
-  max-width: 100%;
-  margin: 0 0 0;
+  width: 850px; /* Set the width of the hero text */
+  max-width: 100%; /* Set the maximum width of the hero text */
+  margin: 0 0 0; /* Remove any margin on the hero text */
 }
 
+/* Styles for the h1 heading inside the hero text */
 .hero-text h1 {
-  margin-left: -0.05em;
-  font-size: 75px;
-  font-weight: bold;
-  font-family: var(--nunito-sans);
-  letter-spacing: -0.03em;
-  line-height: 0.96em;
-  text-transform: none;
-  color: #fff;
+  margin-left: -0.05em; /* Adjust the margin on the left side of the heading */
+  font-size: 75px; /* Set the font size of the heading */
+  font-weight: bold; /* Set the font weight of the heading */
+  font-family: var(--nunito-sans); /* Use the Nunito Sans font family */
+  letter-spacing: -0.03em; /* Adjust the letter spacing of the heading */
+  line-height: 0.96em; /* Set the line height of the heading */
+  text-transform: none; /* Disable text transformation on the heading */
+  color: #fff; /* Set the color of the heading to white */
 }
 
+/* Styles for the h2 heading inside the hero text */
 .hero-text h2 {
-  color: #fff;
-  font-size: 34px;
+  color: #fff; /* Set the color of the heading to white */
+  font-size: 34px; /* Set the font size of the heading */
 }
 
+/* Styles for the button */
 .btn {
-  padding: 12px 25px;
-  background: var(--brown-clr);
-  border: 2px solid var(--brown-clr);
-  color: #fff;
-  font-size: 20px;
-  transition: 0.5s all;
-  display: inline-block;
-  margin: auto;
-  margin-top: 30px;
-  z-index: 1000;
+  padding: 12px 25px; /* Set the padding of the button */
+  background: var(--brown-clr); /* Set the background color of the button */
+  border: 2px solid var(--brown-clr); /* Set the border of the button */
+  color: #fff; /* Set the color of the button text to white */
+  font-size: 20px; /* Set the font size of the button text */
+  transition: 0.5s all; /* Add a smooth transition effect on hover */
+  display: inline-block; /* Display the button as an inline block element */
+  margin: auto; /* Center the button horizontally */
+  margin-top: 30px; /* Add some top margin to the button */
+  z-index: 1000; /* Set a high z-index value for the button */
 }
 
+/* Styles for the button on hover */
 .btn:hover {
-  background: transparent;
-  color: var(--brown-clr);
+  background: transparent; /* Set the background of the button to transparent on hover */
+  color: var(--brown-clr); /* Change the color of the button text to the defined brown color on hover */
 }
 
 /* ===== ABOUT PAGE ===== */
@@ -605,62 +658,62 @@ a.slide_btn {
 }
 
 .flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 30px;
+  display: flex; /* Creates a flex container */
+  align-items: center; /* Centers the flex items vertically */
+  justify-content: space-evenly; /* Distributes the flex items evenly along the main axis with equal spacing between them */
+  gap: 30px; /* Sets the spacing between flex items */
 }
 
 .flex-img {
-  width: 50%;
-  overflow: hidden;
+  width: 50%; /* Sets the width of the flex image container to 50% of its parent container */
+  overflow: hidden; /* Hides any content that overflows the flex image container */
 }
 
 .flex-img img {
-  width: 100%;
-  transition: 0.5s all;
+  width: 100%; /* Sets the width of the flex image to 100% of its parent container */
+  transition: 0.5s all; /* Adds a transition effect to all CSS properties with a duration of 0.5 seconds */
 }
 
 .flex-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Applies a scale transformation to the flex image on hover, making it 5% larger */
 }
 
 .flex-content {
-  width: 50%;
+  width: 50%; /* Sets the width of the flex content container to 50% of its parent container */
 }
 
 .flex-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  font-size: 18px; /* Sets the font size of paragraphs within the flex content container */
+  margin-bottom: 20px; /* Adds a bottom margin of 20px to paragraphs within the flex content container */
+  line-height: 1.5; /* Sets the line height of paragraphs within the flex content container */
 }
 
 .home-about {
-  border-bottom: 2px solid var(--brown-clr);
-  margin-bottom: 30px;
+  border-bottom: 2px solid var(--brown-clr); /* Adds a bottom border of 2px solid color to the home-about container */
+  margin-bottom: 30px; /* Adds a bottom margin of 30px to the home-about container */
 }
 
 .home-about .flex-content span {
-  color: var(--brown-clr);
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 10px;
+  color: var(--brown-clr); /* Sets the text color of spans within the home-about container to the value of the --brown-clr variable */
+  font-size: 18px; /* Sets the font size of spans within the home-about container */
+  font-weight: 700; /* Sets the font weight of spans within the home-about container to bold */
+  text-transform: uppercase; /* Transforms the text of spans within the home-about container to uppercase */
+  display: block; /* Displays spans within the home-about container as block-level elements */
+  margin-bottom: 10px; /* Adds a bottom margin of 10px to spans within the home-about container */
 }
 
 .home-about h2 {
-  color: #202020;
-  font-size: 46px;
-  margin-bottom: 20px;
+  color: #202020; /* Sets the text color of h2 headings within the home-about container to #202020 */
+  font-size: 46px; /* Sets the font size of h2 headings within the home-about container */
+  margin-bottom: 20px; /* Adds a bottom margin of 20px to h2 headings within the home-about container */
 }
 
 .home-about p {
-  font-size: 18px;
-  line-height: 1.4;
-  max-width: 100%;
-  width: 978px;
-  margin: auto;
+  font-size: 18px; /* Sets the font size of paragraphs within the home-about container */
+  line-height: 1.4; /* Sets the line height of paragraphs within the home-about container */
+  max-width: 100%; /* Sets the maximum width of paragraphs within the home-about container to 100% */
+  width: 978px; /* Sets the width of paragraphs within the home-about container to 978px */
+  margin: auto; /* Centers the paragraphs horizontally within the home-about container */
 }
 
 .about {
@@ -739,21 +792,24 @@ a.slide_btn {
   width: 30%;
 }
 
+/* Styles for the plan card */
 .plan-card {
   padding: 0;
   height: 100% ;
   background: #fff;
   border-radius: 10px;
   border: 1px solid #e1e1e1;
-  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.15);
-  box-shadow: 0 0 17px 0 rgb(0 0 0 / 15%);
-  transition: 0.5s;
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.15); /* Adds a box shadow effect */
+  box-shadow: 0 0 17px 0 rgb(0 0 0 / 15%); /* Adds a box shadow effect */
+  transition: 0.5s; /* Adds a smooth transition effect */
 }
 
+/* Styles for the plan card on hover */
 .plan-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px); /* Moves the card 10 pixels up on hover */
 }
 
+/* Styles for the image inside the plan card */
 .plan-card img {
   width: 100%;
   height: 240px;
@@ -763,25 +819,29 @@ a.slide_btn {
   margin-bottom: 15px;
 }
 
+/* Styles for the details section of the plan card */
 .plan-details {
   padding: 10px 20px 20px 20px;
   text-align: left;
 }
 
+/* Styles for the heading in the plan details section */
 .plan-details h2{
   display: inline-block;
   font-weight: 600;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e5bb31;
+  border-bottom: 1px solid #e5bb31; /* Adds a border underline effect */
 }
 
+/* Styles for the paragraphs in the plan details section */
 .plan-details p {
   font-size: 18px;
   line-height: 1.3;
   color: #333;
 }
 
+/* Styles for the plan card inside the "values" class */
 .values .plan-card img {
   width: unset;
   height: unset;
@@ -791,14 +851,13 @@ a.slide_btn {
 }
 
 .values .plan-card {
-  background: #753f21;
+  background: #753f21; /* Sets a background color for plan cards in the "values" class */
 }
 
 .values .plan-card p,
 .values .plan-card h2 {
-  color: #fff;
+  color: #fff; /* Sets the text color to white for paragraphs and headings in the "values" class */
 }
-
 
 /* ===== Connect Section ===== */
 .connect {
@@ -868,32 +927,35 @@ a.slide_btn {
 
 
 /* ===== Footer ===== */
+/* Defines the styles for the footer section */
 footer {
-  position: relative;
-  height: auto;
-  padding: 20px 0 0 0;
-  background: #e5bb31;
-  text-align: center;
-  color: #fff;
-  border-top-left-radius: 300px;
+  position: relative; /* Footer's position is relative to its normal position in the document flow */
+  height: auto; /* Allows the footer to adjust its height based on its content */
+  padding: 20px 0 0 0; /* Adds padding to the top of the footer */
+  background: #e5bb31; /* Sets the background color of the footer to a specific color */
+  text-align: center; /* Aligns the content of the footer to the center */
+  color: #fff; /* Sets the text color of the footer to white */
+  border-top-left-radius: 300px; /* Adds a border radius to the top left corner of the footer */
 }
 
+/* Defines the styles for the container within the footer */
 footer .container {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  margin-left: 0; /* Removes the left margin of the container */
+  margin-right: 0; /* Removes the right margin of the container */
+  padding-left: 30px; /* Adds left padding to the container */
+  padding-right: 30px; /* Adds right padding to the container */
+  width: 100%; /* Sets the width of the container to 100% of its parent */
+  display: flex; /* Makes the container a flex container */
+  flex-wrap: wrap; /* Allows the content within the container to wrap to the next line if necessary */
+  justify-content: space-evenly; /* Distributes the content evenly along the horizontal axis within the container */
 }
 
+/* Defines the styles for the logo within the footer */
 footer .logo {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 10%;
-  display: block;
+  margin: 0 auto; /* Centers the logo horizontally within its container */
+  margin-bottom: 20px; /* Adds bottom margin to the logo */
+  width: 10%; /* Sets the width of the logo to 10% of its parent */
+  display: block; /* Displays the logo as a block element */
 }
 
 footer .links {
@@ -931,50 +993,55 @@ footer .contact-details h3 {
   margin-bottom: 20px;
 }
 
+/* Styles for the form container */
 .form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Display the form container as a flex container */
+  align-items: center; /* Align items vertically at the center of the container */
+  justify-content: center; /* Align items horizontally at the center of the container */
 }
 
+/* Styles for the form input */
 .form input {
-  height: 45px;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 15px;
-  border-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  font-family: var(--montserrat);
-  font-size: 16px;
+  height: 45px; /* Set the height of the input field to 45 pixels */
+  width: 100%; /* Set the width of the input field to 100% of its container */
+  border: none; /* Remove borders from the input field */
+  outline: none; /* Remove the outline when the input field is focused */
+  padding: 15px; /* Add padding to the input field */
+  border-radius: 5px; /* Add rounded corners to all corners of the input field */
+  border-top-right-radius: 0; /* Remove the rounded corner at the top right of the input field */
+  border-bottom-right-radius: 0; /* Remove the rounded corner at the bottom right of the input field */
+  font-family: var(--montserrat); /* Use the "Montserrat" font for the input field */
+  font-size: 16px; /* Set the font size of the input field to 16 pixels */
 }
 
+/* Styles for the form button */
 .form button {
-  height: 45px;
-  background: var(--brown-clr);
-  outline: none;
-  border: none;
-  padding: 15px;
-  border-radius: 5px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  cursor: pointer;
-  color: #fff;
-  font-size: 16px;
-  font-family: var(--montserrat);
-  display: flex;
-  align-items: center;
+  height: 45px; /* Set the height of the button to 45 pixels */
+  background: var(--brown-clr); /* Set the background color of the button using a custom variable */
+  outline: none; /* Remove the outline when the button is focused */
+  border: none; /* Remove borders from the button */
+  padding: 15px; /* Add padding to the button */
+  border-radius: 5px; /* Add rounded corners to all corners of the button */
+  border-top-left-radius: 0; /* Remove the rounded corner at the top left of the button */
+  border-bottom-left-radius: 0; /* Remove the rounded corner at the bottom left of the button */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  color: #fff; /* Set the text color of the button to white */
+  font-size: 16px; /* Set the font size of the button to 16 pixels */
+  font-family: var(--montserrat); /* Use the "Montserrat" font for the button */
+  display: flex; /* Display the button as a flex container */
+  align-items: center; /* Align items vertically at the center of the button */
 }
 
+/* Styles for the branding section in the footer */
 footer .branding {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #fff;
+  padding-top: 20px; /* Add top padding to the branding section */
+  padding-bottom: 20px; /* Add bottom padding to the branding section */
+  border-top: 1px solid #fff; /* Add a top border to the branding section with a white color */
 }
 
+/* Styles for paragraphs within the branding section */
 .branding p {
-  color: #fff;
+  color: #fff; /* Set the text color of paragraphs within the branding section to white */
 }
 
 

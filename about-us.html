@@ -25,21 +25,24 @@
 
     <!-- ===== Navigation Bar ===== -->
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="images/Logo.png" alt="Hooyo's Food">
-            </a>
+        <!-- The code represents a navigation bar -->
 
-            <div class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about-us.html" class="active">About us</a></li>
-                </ul>
-            </div>
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        <img src="images/Logo.png" alt="Hooyo's Food"> <!-- Logo of the website -->
+    </a>
 
-            <i class="fa-solid fa-bars" id="bar"></i>
-        </nav>
+    <div class="nav-menu">
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li> <!-- Link to the home page -->
+            <li><a href="gallery.html">Gallery</a></li> <!-- Link to the gallery page -->
+            <li><a href="about-us.html" class="active">About us</a></li> <!-- Link to the about us page (highlighted as active) -->
+        </ul>
+    </div>
+
+    <i class="fa-solid fa-bars" id="bar"></i> <!-- Hamburger icon for mobile navigation -->
+</nav>
+
     </header>
 
 
@@ -76,27 +79,45 @@
             ABOUT SECTION
     ========================================================================================== -->
     <section class="about section">
-        <div class="container">
+        <div class class="container">
+            <!-- Container for the content -->
+        
             <h1>Who We Are</h1>
-
+            <!-- Heading introducing the purpose or identity of the website -->
+        
             <div class="flex">
+                <!-- Flexible container for horizontal layout -->
+        
                 <div class="flex-img">
+                    <!-- Container for the image -->
                     <img src="images/Malawah.jpg" alt="About Us">
+                    <!-- Image representing the brand or concept of the website -->
                 </div>
-
+        
                 <div class="flex-content">
+                    <!-- Container for the textual content -->
+        
                     <span class="pink">Hooyo's Food</span>
+                    <!-- Styling for the enclosed text with the "pink" class -->
+        
                     <h2>"Satisfy your cravings with Hooyo's Food."</h2>
-
-                    <p>Hooyo's Food is an online Somali food website that offers a wide variety of traditional Somali
+                    <!-- Catchy slogan or tagline -->
+        
+                    <p>
+                        Hooyo's Food is an online Somali food website that offers a wide variety of traditional Somali
                         dishes. From sambusas to suqaar, customers can order authentic Somali cuisine and have it
                         delivered straight to their door. With a focus on using fresh ingredients and traditional
                         cooking methods, Hooyo's Food is the perfect choice for those looking to experience the rich
-                        flavors of Somali cuisine.</p>
+                        flavors of Somali cuisine.
+                    </p>
+                    <!-- Description of the website and its offerings -->
+        
                     <!-- <a href="#/" class="btn">Order Now</a> -->
+                    <!-- Commented out link for ordering, possibly not implemented yet -->
                 </div>
             </div>
         </div>
+        
     </section>
 
 
@@ -153,17 +174,20 @@
     ========================================================================================== -->
     <section class="connect">
         <div class="container">
-            <h1>Connect With Us</h1>
-            <p>Send us Email at:</p>
-            <a class="mail" href="mailto:drippedcakes@gmail.com"><i class="fas fa-envelope"></i>
-                hooyosfood@gmail.com</a>
-
+            <h1>Connect With Us</h1> <!-- Heading for the section -->
+        
+            <p>Send us Email at:</p> <!-- Text introducing the email link -->
+        
+            <a class="mail" href="mailto:hooyosfood@gmail.com"><i class="fas fa-envelope"></i>
+                hooyosfood@gmail.com</a> <!-- Email link with mailto attribute and email address -->
+        
             <ul class="social_icons">
-                <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#/"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#/"><i class="fa-brands fa-facebook"></i></a></li>
-            </ul>
+                <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li> <!-- Instagram icon link -->
+                <li><a href="#/"><i class="fa-brands fa-twitter"></i></a></li> <!-- Twitter icon link -->
+                <li><a href="#/"><i class="fa-brands fa-facebook"></i></a></li> <!-- Facebook icon link -->
+            </ul> <!-- Unordered list of social media icons -->
         </div>
+        
     </section>
 
 
@@ -172,29 +196,39 @@
             FOOTER
     ========================================================================================== -->
     <footer>
-        <div class="container">
-            <div class="links">
-                <a href="index.html" class="logo">
-                    <img src="images/Logo.png">
-                </a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </ul>
-            </div>
+        <!-- This is the main container div -->
+<div class="container">
+    <!-- This div contains the logo and navigation links -->
+    <div class="links">
+        <a href="index.html" class="logo">
+            <!-- The logo image -->
+            <img src="images/Logo.png">
+        </a>
+        <ul>
+            <!-- The navigation links -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </div>
 
-            <div class="contact-details">
-                <h3>Subscribe to Our Newsletter</h3>
-                <form class="form">
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-        <div class="branding">
-            <p>Copyright &copy; 2023 Hooyo's Food | All Rights Reserved.</p>
-        </div>
+    <!-- This div contains the contact details and newsletter subscription form -->
+    <div class="contact-details">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form class="form">
+            <!-- Email input field for newsletter subscription -->
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <!-- Submit button for the form -->
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<!-- This div contains the branding information -->
+<div class="branding">
+    <p>Copyright &copy; 2023 Hooyo's Food | All Rights Reserved.</p>
+</div>
+
     </footer>
 
 
