@@ -137,7 +137,6 @@ $('.slider').each(function() {
   advance();
 });
 
-
 //Image Gallery
 // Create a new IntersectionObserver object named 'observer'
 // The callback function 'f' will be executed when the observed elements intersect with the viewport
